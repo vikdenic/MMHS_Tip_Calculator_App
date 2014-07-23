@@ -12,17 +12,35 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             
     @IBOutlet weak var tipAmountLabel: UILabel!
     @IBOutlet weak var billAmountTextField: UITextField!
+    var tipAmount : Double!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
-    //Delegate Method
+    //Helper method to calculate tip
+    func calculateTip()
+    {
+        var billAmount = billAmountTextField.text.bridgeToObjectiveC().doubleValue
+        tipAmount = billAmount * 0.15
+
+        //Format string to display dollar signs and 2 decimal places
+        var tipString = NSString(format:"$%.2f", tipAmount)
+
+        //Set label to display string
+        tipAmountLabel.text = tipString
+    }
+
+    //IBAction that detects when billAmountTextField is Edited
     @IBAction func onBillAmountTextFieldEdited(sender: AnyObject)
     {
-        
+        calculateTip()
     }
 
+    //Resign keyboard when user taps away from textfield
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!)
+    {
+        view.endEditing(true)
+    }
 }
 
