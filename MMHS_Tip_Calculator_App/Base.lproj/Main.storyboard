@@ -23,10 +23,10 @@
                                 </variation>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-t9-bQj">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="6" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-zX-pzb">
-                                        <rect key="frame" x="233" y="116" width="135" height="66"/>
+                                        <rect key="frame" x="233" y="96" width="135" height="66"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -38,7 +38,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Should Tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zWF-Su-ygy">
-                                        <rect key="frame" x="119" y="42" width="363" height="66"/>
+                                        <rect key="frame" x="119" y="38" width="363" height="66"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -50,24 +50,24 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipp-Uc-IVR">
-                                        <rect key="frame" x="126" y="190" width="349" height="66"/>
+                                        <rect key="frame" x="126" y="170" width="349" height="66"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="26" y="190" width="349" height="66"/>
+                                            <rect key="frame" x="26" y="166" width="349" height="66"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="220" y="271" width="361" height="66"/>
+                                            <rect key="frame" x="220" y="212" width="361" height="66"/>
                                         </variation>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Tap Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDa-IK-vUB">
-                                        <rect key="frame" x="213" y="264" width="174" height="71"/>
+                                        <rect key="frame" x="213" y="244" width="174" height="71"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="131" y="264" width="139" height="71"/>
+                                            <rect key="frame" x="129" y="240" width="139" height="71"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                             <rect key="frame" x="280" y="360" width="241" height="80"/>
@@ -76,6 +76,54 @@
                                             <action selector="onBillAmountTextFieldEdited:" destination="BYZ-38-t0r" eventType="editingChanged" id="ens-kb-YIZ"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gratuity %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86h-lk-gJt">
+                                        <rect key="frame" x="126" y="323" width="349" height="66"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="26" y="328" width="349" height="66"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="220" y="286" width="361" height="66"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRL-dy-aBg">
+                                        <rect key="frame" x="119" y="397" width="67" height="67"/>
+                                        <state key="normal" image="10_unselected_image">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JcT-9i-57L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8b-DC-4RN">
+                                        <rect key="frame" x="214" y="397" width="67" height="67"/>
+                                        <state key="normal" image="15_unselected_image">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onFifteenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJa-Yj-8hq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0H-2L-Gel">
+                                        <rect key="frame" x="404" y="397" width="67" height="67"/>
+                                        <state key="normal" image="25_unselected_image">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTwentyFiveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="86S-af-Wf6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0V-6U-OOa">
+                                        <rect key="frame" x="309" y="397" width="67" height="67"/>
+                                        <state key="normal" image="20_unselected_image">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTwentyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uc1-Q2-lsV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
@@ -83,7 +131,11 @@
                     </view>
                     <connections>
                         <outlet property="billAmountTextField" destination="TDa-IK-vUB" id="JXz-fQ-nm6"/>
+                        <outlet property="fifteenButton" destination="m8b-DC-4RN" id="zE9-gL-oIp"/>
+                        <outlet property="tenButton" destination="TRL-dy-aBg" id="aJO-rY-cmv"/>
                         <outlet property="tipAmountLabel" destination="EVE-zX-pzb" id="Mux-LN-sRY"/>
+                        <outlet property="twentyButton" destination="h0V-6U-OOa" id="h3N-oC-wdN"/>
+                        <outlet property="twentyFiveButton" destination="a0H-2L-Gel" id="JpY-v2-zsl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,6 +144,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="10_unselected_image" width="67" height="67"/>
+        <image name="15_unselected_image" width="67" height="67"/>
+        <image name="20_unselected_image" width="67" height="67"/>
+        <image name="25_unselected_image" width="67" height="67"/>
         <image name="green_bg" width="320" height="568"/>
     </resources>
 </document>
