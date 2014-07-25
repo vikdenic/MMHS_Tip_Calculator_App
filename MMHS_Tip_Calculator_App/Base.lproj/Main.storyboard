@@ -88,7 +88,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="xFO-av-g8D"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -279,6 +279,7 @@
                         <outlet property="totalBillLabel" destination="Poo-Mt-ivO" id="9M6-yN-LIl"/>
                         <outlet property="twentyButton" destination="h0V-6U-OOa" id="h3N-oC-wdN"/>
                         <outlet property="twentyFiveButton" destination="a0H-2L-Gel" id="JpY-v2-zsl"/>
+                        <outlet property="verticalHeight" destination="7GW-bR-3cr" id="WGh-Vu-ics"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

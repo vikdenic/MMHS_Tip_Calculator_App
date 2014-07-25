@@ -27,11 +27,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var totalBillLabel: UILabel!
 
+    @IBOutlet weak var verticalHeight: NSLayoutConstraint!
     override func viewDidLoad()
     {
         super.viewDidLoad()
         splitLabel.text = "\(splitCount)"
         fifteenButton .setImage(UIImage(named: "15_selected_image"), forState: .Normal)
+
+        if self.view.frame.size.height == 568
+        {
+            verticalHeight.constant = 30
+        }
     }
 
     //Helper method to calculate tip
@@ -47,7 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         tipAmountLabel.text = tipString
 
         //set total bill
-        var totalBill = tipAmount + billAmount
+        var totalBill = tipAmount * Double(splitCount) + billAmount
         totalBillLabel.text = NSString(format:"Total: $%.2f", totalBill)
 
         animateTotalBillLabel()
@@ -135,6 +141,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         UIView.animateWithDuration(1, animations: {
             self.totalBillLabel.alpha = 1
             })
+    }
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle
+    {
+            return UIStatusBarStyle.LightContent;
     }
 
 }
