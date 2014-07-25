@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C3D0AD94-92F2-4B7C-9670-E9E1E7124ECA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MMHS_Tip_Calculator_App</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E748526C-E5CF-4BBA-A2D1-CCF256DBB5BD</key>
+		<string>https://github.com/vikdenic/MMHS_Tip_Calculator_App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MMHS_Tip_Calculator_App.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E748526C-E5CF-4BBA-A2D1-CCF256DBB5BD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vikdenic/MMHS_Tip_Calculator_App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E748526C-E5CF-4BBA-A2D1-CCF256DBB5BD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E748526C-E5CF-4BBA-A2D1-CCF256DBB5BD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MMHS_Tip_Calculator_App</string>
+		</dict>
+	</array>
+</dict>
+</plist>
