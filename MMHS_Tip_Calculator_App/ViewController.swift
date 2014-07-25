@@ -13,10 +13,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tipAmountLabel: UILabel!
     @IBOutlet weak var billAmountTextField: UITextField!
 
-    var tipPercent : Double!
-    var tipAmount : Double!
+    var tipPercent : Double = 0.15
+    var tipAmount : Double = 0.0
 
-    var splitAmount : Double!
+    var splitCount = 1
+
+    @IBOutlet weak var splitLabel: UILabel!
 
     @IBOutlet weak var tenButton: UIButton!
     @IBOutlet weak var fifteenButton: UIButton!
@@ -26,14 +28,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        tipPercent = 0.15
+        splitLabel.text = "\(splitCount)"
+        fifteenButton .setImage(UIImage(named: "15_selected_image"), forState: .Normal)
     }
 
     //Helper method to calculate tip
     func calculateTip()
     {
         var billAmount = billAmountTextField.text.bridgeToObjectiveC().doubleValue
-        tipAmount = billAmount * tipPercent
+        tipAmount = billAmount * tipPercent / splitCount.bridgeToObjectiveC().doubleValue
 
         //Format string to display dollar signs and 2 decimal places
         var tipString = NSString(format:"$%.2f", tipAmount)
@@ -95,5 +98,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
         twentyButton .setImage(UIImage(named: "20_unselected_image"), forState: .Normal)
         twentyFiveButton .setImage(UIImage(named: "25_unselected_image"), forState: .Normal)
     }
+
+    //splitting up the tip
+    @IBAction func onDownPressed(sender: UIButton)
+    {
+        if splitCount > 1
+        {
+            splitCount--
+            splitLabel.text = "\(splitCount)"
+            calculateTip()
+        }
+    }
+
+    @IBAction func onUpPressed(sender: UIButton)
+    {
+        if splitCount > 0
+        {
+            splitCount++
+            splitLabel.text = "\(splitCount)"
+            calculateTip()
+        }
+    }
+
 }
 
