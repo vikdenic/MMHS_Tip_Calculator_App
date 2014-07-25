@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var tipPercent : Double!
     var tipAmount : Double!
 
+    var splitAmount : Double!
+
     @IBOutlet weak var tenButton: UIButton!
     @IBOutlet weak var fifteenButton: UIButton!
     @IBOutlet weak var twentyButton: UIButton!
@@ -55,43 +57,43 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //button actions
     @IBAction func onTenButtonPressed(sender: UIButton)
     {
-//        resetAllButtons()
-     tenButton.imageView.image = UIImage(named: "10_selected_image")
+        resetAllButtons()
+        tenButton .setImage(UIImage(named: "10_selected_image"), forState: .Normal)
         tipPercent = 0.10
         calculateTip()
     }
 
     @IBAction func onFifteenButtonPressed(sender: UIButton)
     {
-//        resetAllButtons()
-        fifteenButton.imageView.image = UIImage(named: "15_selected_image")
+        resetAllButtons()
+        fifteenButton .setImage(UIImage(named: "15_selected_image"), forState: .Normal)
         tipPercent = 0.15
         calculateTip()
     }
 
     @IBAction func onTwentyButtonPressed(sender: UIButton)
     {
-//        resetAllButtons()
-        twentyButton.imageView.image = UIImage(named: "20_selected_image")
+        resetAllButtons()
+        twentyButton .setImage(UIImage(named: "20_selected_image"), forState: .Normal)
         tipPercent = 0.20
         calculateTip()
     }
 
     @IBAction func onTwentyFiveButtonPressed(sender: UIButton)
     {
-//        resetAllButtons()
-        twentyFiveButton.imageView.image = UIImage(named: "25_selected_image")
+        resetAllButtons()
+        twentyFiveButton .setImage(UIImage(named: "25_selected_image"), forState: .Normal)
         tipPercent = 0.25
         calculateTip()
     }
 
-//    //helper method that resets all buttons to unselected image
-//    func resetAllButtons()
-//    {
-//        tenButton.imageView.image = UIImage(named: "ten_unselected_image")
-//        fifteenButton.imageView.image = UIImage(named: "fifteen_unselected_image")
-//        twentyButton.imageView.image = UIImage(named: "twenty_unselected_image")
-//        twentyFiveButton.imageView.image = UIImage(named: "twentyFive_unselected_image")
-//    }
+    //helper method that resets all buttons to unselected image
+    func resetAllButtons()
+    {
+        tenButton .setImage(UIImage(named: "10_unselected_image"), forState: .Normal)
+        fifteenButton .setImage(UIImage(named: "15_unselected_image"), forState: .Normal)
+        twentyButton .setImage(UIImage(named: "20_unselected_image"), forState: .Normal)
+        twentyFiveButton .setImage(UIImage(named: "25_unselected_image"), forState: .Normal)
+    }
 }
 
