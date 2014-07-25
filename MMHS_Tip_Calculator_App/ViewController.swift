@@ -25,6 +25,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var twentyButton: UIButton!
     @IBOutlet weak var twentyFiveButton: UIButton!
 
+    @IBOutlet weak var totalBillLabel: UILabel!
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -43,6 +45,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
         //Set label to display string
         tipAmountLabel.text = tipString
+
+        //set total bill
+        var totalBill = tipAmount + billAmount
+        totalBillLabel.text = NSString(format:"Total: $%.2f", totalBill)
+
+        animateTotalBillLabel()
     }
 
     //IBAction that detects when billAmountTextField is Edited
@@ -118,6 +126,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
             splitLabel.text = "\(splitCount)"
             calculateTip()
         }
+    }
+
+    //animate the label
+    func animateTotalBillLabel()
+    {
+        totalBillLabel.alpha = 0
+        UIView.animateWithDuration(1, animations: {
+            self.totalBillLabel.alpha = 1
+            })
     }
 
 }

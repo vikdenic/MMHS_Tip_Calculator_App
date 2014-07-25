@@ -73,23 +73,20 @@
                                             <rect key="frame" x="220" y="212" width="361" height="66"/>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Tap Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDa-IK-vUB">
-                                        <rect key="frame" x="213" y="209" width="174" height="71"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gratuity %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86h-lk-gJt">
+                                        <rect key="frame" x="126" y="297" width="349" height="66"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="129" y="240" width="139" height="71"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="26" y="328" width="349" height="66"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="280" y="360" width="241" height="80"/>
+                                            <rect key="frame" x="220" y="286" width="361" height="66"/>
                                         </variation>
-                                        <connections>
-                                            <action selector="onBillAmountTextFieldEdited:" destination="BYZ-38-t0r" eventType="editingChanged" id="ens-kb-YIZ"/>
-                                        </connections>
-                                    </textField>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gratuity %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86h-lk-gJt">
-                                        <rect key="frame" x="126" y="288" width="349" height="66"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split Between" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8F-nx-C9v">
+                                        <rect key="frame" x="133" y="443" width="349" height="66"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -160,16 +157,31 @@
                                             <action selector="onUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cie-Hd-wbQ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split Between" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8F-nx-C9v">
-                                        <rect key="frame" x="133" y="443" width="349" height="66"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Tap Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDa-IK-vUB">
+                                        <rect key="frame" x="213" y="199" width="174" height="71"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="26" y="328" width="349" height="66"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="42"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="129" y="240" width="139" height="71"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="220" y="286" width="361" height="66"/>
+                                            <rect key="frame" x="280" y="360" width="241" height="80"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="onBillAmountTextFieldEdited:" destination="BYZ-38-t0r" eventType="editingChanged" id="ens-kb-YIZ"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Poo-Mt-ivO">
+                                        <rect key="frame" x="163" y="271" width="275" height="37"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="26" y="166" width="349" height="66"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="220" y="212" width="361" height="66"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -183,6 +195,7 @@
                         <outlet property="splitLabel" destination="lwr-xg-7B5" id="59x-B1-7Wc"/>
                         <outlet property="tenButton" destination="TRL-dy-aBg" id="aJO-rY-cmv"/>
                         <outlet property="tipAmountLabel" destination="EVE-zX-pzb" id="Mux-LN-sRY"/>
+                        <outlet property="totalBillLabel" destination="Poo-Mt-ivO" id="9M6-yN-LIl"/>
                         <outlet property="twentyButton" destination="h0V-6U-OOa" id="h3N-oC-wdN"/>
                         <outlet property="twentyFiveButton" destination="a0H-2L-Gel" id="JpY-v2-zsl"/>
                     </connections>
