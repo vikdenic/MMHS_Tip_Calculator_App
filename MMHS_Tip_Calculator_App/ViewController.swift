@@ -43,8 +43,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //Helper method to calculate tip
     func calculateTip()
     {
-        var billAmount = billAmountTextField.text.bridgeToObjectiveC().doubleValue
-        tipAmount = billAmount * tipPercent / splitCount.bridgeToObjectiveC().doubleValue
+        var billAmount = NSString(string: billAmountTextField.text).doubleValue
+        tipAmount = billAmount * tipPercent / Double(splitCount)
 
         //Format string to display dollar signs and 2 decimal places
         var tipString = NSString(format:"$%.2f", tipAmount)
